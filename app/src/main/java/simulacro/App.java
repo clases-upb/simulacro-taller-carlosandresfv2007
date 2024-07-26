@@ -14,6 +14,25 @@ public class App {
      * y devuelve en entero, los segundos equivalentes. Si hay un error, devuelve -1. 
      *  Adaptado de edabit
      */
+
+    public static int Convertir_min_sec (int minutos) {
+
+        try {
+            
+            int tot_segundos = 0;
+            final byte segx_min = 60;
+            tot_segundos = minutos * segx_min;
+            return tot_segundos;
+
+
+
+        } catch (Exception e) {
+
+            return -1;
+
+        }
+
+     }
     
 
 
@@ -23,6 +42,30 @@ public class App {
      *  Adaptado de edabit
      */
 
+    public static Boolean Validar_iguales (short nro1, short nro2) {
+
+       try {
+
+        boolean son_iguales = false;
+
+        if (nro1 == nro2) {
+            son_iguales = true;
+        } else {
+            son_iguales = false;
+        }
+        return son_iguales;
+
+       } catch (Exception e) {
+
+        return false;
+
+    
+       }
+
+
+     }
+
+
 
 
     /*
@@ -31,6 +74,23 @@ public class App {
      * Si hay un error, devuelve 0.
      *  Adaptado de edabit
      */
+
+    public static float Calcular_potencia (short voltaje, byte corriente) {
+
+        try {
+
+            float potencia = 0;
+            potencia = voltaje * corriente;
+            return potencia;
+
+        } catch (Exception e) {
+
+            return 0;
+
+        }
+
+     }
+
 
 
 
